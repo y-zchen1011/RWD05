@@ -18,47 +18,49 @@
 
 <body>
 
-<div class="container-fluid d-flex row">
-  <div class="d-flex flex-column justify-content-between col-lg-3 col-md-4">
-    <nav id="sidebarMenu" class=" d-md-block sidebar collapse">
+<div class="container-fluid d-flex">
+  <div class="row flex-column justify-content-between col-lg-3 col-md-4">
+    <nav id="sidebarMenu" class="d-md-block sidebar collapse">
       <div class="sidebar-sticky">
         <div class="logoBox">
-          <span class="logo material-icons md-36">brightness_7</span>
-          <h1 class="m-0">ANSWER</h1>
+          <h1>
+            <span class="logo material-icons md-36">brightness_7</span>
+            ANSWER
+          </h1>
         </div>
-        <ul class="nav flex-column">
-          <li class="nav-item ">
-            <a class="nav-link" href="index.html">
+        <ul class="list-group flex-column">
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="index.html">
               <span class="material-icons">assessment</span>
               Dashboard
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#">
               <span class="material-icons">question_answer</span>
               Question
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#">
               <span class="material-icons">assignment</span>
               Assignment
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#">
               <span class="material-icons">video_library</span>
               Course
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="admin.html">
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="admin.html">
               <span class="material-icons">supervisor_account</span>
               Admin
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#">
               <span class="material-icons">settings</span>
               Setting
             </a>
@@ -78,14 +80,15 @@
   <div class="d-flex justify-content-between pr-2 header">
     <div class="d-flex justify-content-between col-auto p-0">
       <h1 class="text-black mr-3">Admin</h1>
-      <a href="#" class="addNewAdmin"><span class="material-icons">add</span>Add New Admin</a>
+      <a href="#" class="addNewAdmin pt-1"><span class="material-icons">add</span>Add New Admin</a>
     </div>
-    <div class=" col-auto">
+    <div class="col-auto pt-1">
       <a href="#" class="icon"><span class="material-icons search">search</span></a>
       <a href="#" class="icon"><span class="material-icons">notifications_active</span></a>
     </div>
   </div>
-  <table class="table table-hover table-borderless">
+  <div class="table-responsive">
+    <table class="table table-hover table-borderless ">
     <thead>
     <tr class="">
       <th scope="col" width="200px">ID<span class="material-icons md-18">south</span></th>
@@ -155,6 +158,7 @@
     </tr>
     </tbody>
   </table>
+  </div>
   <ul class="pagination justify-content-end">
         <li class="page-item">
           <a class="page-link icon" href="#" aria-label="Previous">
@@ -186,11 +190,11 @@
           <form>
             <div class="form-group">
               <label for="name" class="col-form-label inputTextLabel">Name</label>
-              <input type="text" class="form-control inputText" id="name" placeholder="Name">
+              <input type="text" class="form-control inputText" id="name">
             </div>
             <div class="form-group">
               <label for="mail" class="col-form-label inputTextLabel">Email</label>
-              <input type="text" class="form-control inputText" id="mail" placeholder="E-mail">
+              <input type="text" class="form-control inputText" id="mail">
             </div>
           </form>
           <hr>

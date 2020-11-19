@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 32px !important;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  background-color: #edf4ee;
+}
+.sidebar .logoBox {
+  margin-bottom: 32px;
+}
+.sidebar .logo {
+  color: #2a8356;
+  padding: 2px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.sidebar h1 {
+  font-size: 24px;
+  line-height: 40px;
+  display: inline-block;
+}
+.sidebar ul a {
+  display: inline-block;
+  font: normal normal bold 16px/24px Lato;
+}
+.sidebar ul a:hover {
+  color: #2a8356;
+}
+.sidebar ul .material-icons {
+  margin-right: 16px;
+}
+.sidebar .userPhoto {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.material-icons {
+  vertical-align: middle !important;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 140px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports (position: -webkit-sticky) or (position: sticky) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+.list-group .list-group-item {
+  background-color: #edf4ee !important;
+  border: none !important;
+}
+.list-group .list-group-item-action {
+  font: normal normal bold 16px/24px Lato;
+  color: #000;
+}
+.list-group .list-group-item-action:hover {
+  color: #2a8356;
+  background-color: #edf4ee !important;
+}
+
+.content {
+  padding: 32px;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+.header h1 {
+  font: normal normal bold 24px/33px Lato;
+}
+.header a, .header a:hover {
+  text-decoration: none;
+  font: normal normal bold 16px/24px Lato;
+  color: #000;
+}
+.header .addNewAdmin {
+  justify-self: flex-start;
+}
+.header .addNewAdmin .material-icons {
+  color: #2a8356;
+}
+.header .search {
+  margin-right: 26px;
+}
+
+.table {
+  margin-bottom: 63px !important;
+}
+.table thead tr {
+  border-bottom: 2px solid #000;
+  font: normal normal bold 16px/24px Lato;
+}
+.table thead .material-icons {
+  color: #2a8356;
+}
+.table tr {
+  border-bottom: 2px solid #edf4ee;
+}
+
+.icon {
+  color: #000;
+}
+
+.icon :hover {
+  color: #2a8356;
+}
+
+.pagination .page-link {
+  color: #000;
+  border-color: #2a8356;
+}
+.pagination .icon {
+  color: #2a8356;
+}
+.pagination .page-link:hover {
+  color: #fff;
+  background-color: #2a8356;
+}
+
+/*Modal*/
+.modal .inputText {
+  background-color: #edf4ee;
+}
+.modal .inputTextLabel {
+  font: normal normal normal 14px/24px Lato;
+  padding: 0;
+}
+.modal .btn-green {
+  background-color: #2a8356;
+  color: #fff;
+  border-color: #2a8356;
+  border-radius: 0;
+}
+.modal .btn-green:hover {
+  background-color: rgba(42, 131, 86, 0.7);
+  color: #fff;
+  border-color: #2a8356;
+  transition: color 0.3s;
+}
+.modal .btn-outline-green {
+  border: 1px solid #edf4ee;
+  color: #2a8356;
+  background-color: #fff;
+  border-radius: 0;
+}
+.modal .btn-outline-green:hover {
+  border: 1px solid #edf4ee;
+  color: rgba(42, 131, 86, 0.7);
+  background-color: #fff;
+  transition: color 0.3s;
+}
+.modal hr {
+  margin: 24px 0;
+}
+.modal h5 {
+  margin-bottom: 16px;
+}
+
+/*# sourceMappingURL=all.css.map */

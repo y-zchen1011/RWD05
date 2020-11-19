@@ -1,0 +1,101 @@
+.content{
+  padding: 32px;
+}
+.header{
+  margin-bottom: 32px;
+  h1{
+    font: normal normal bold 24px/33px Lato;
+  }
+  a, a:hover{
+    text-decoration: none;
+    font: normal normal bold 16px/24px Lato;
+    color: #000;
+  }
+  .addNewAdmin {
+    justify-self: flex-start;
+  }
+  .addNewAdmin .material-icons{
+    color: $darkgreen;
+  }
+  .search{
+    margin-right: 26px;
+  }
+}
+
+.table{
+  margin-bottom: 63px !important;
+  thead{
+    tr{
+      border-bottom: 2px solid #000;
+      font: normal normal bold 16px/24px Lato;
+    }
+    .material-icons{
+      color: $darkgreen;
+    }
+  }
+  tr{
+    border-bottom: 2px solid $lightgreen;
+  }
+}
+.icon{
+  color: #000;
+}
+.icon :hover{
+  color: $darkgreen;
+}
+.pagination{
+  .page-link{
+    color: #000;
+    border-color: $darkgreen;
+  }
+  .icon{
+    color: $darkgreen;
+  }
+  .page-link:hover{
+    color: #fff;
+    background-color: $darkgreen;
+  }
+}
+
+
+/*Modal*/
+.modal{
+  .inputText{
+    background-color: $lightgreen;
+  }
+  .inputTextLabel{
+    font: normal normal normal 14px/24px Lato;
+    padding: 0;
+  }
+  .btn-green{
+    background-color: $darkgreen;
+    color: #fff;
+    border-color: $darkgreen;
+    border-radius: 0;
+  }
+  .btn-green:hover{
+    background-color: rgba(42,131,86,0.7);
+    color: #fff;
+    border-color: $darkgreen;
+    transition: color 0.3s;
+  }
+  .btn-outline-green{
+    border: 1px solid $lightgreen;
+    color: $darkgreen;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .btn-outline-green:hover{
+    border: 1px solid $lightgreen;
+    color: rgba(42,131,86,0.7);
+    background-color: #fff;
+    transition: color 0.3s;
+  }
+  hr{
+    margin: 24px 0;
+  }
+  h5{
+    margin-bottom: 16px;
+  }
+
+}
